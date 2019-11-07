@@ -12,13 +12,13 @@
       <div>
         <label>Email address:</label>
         <br>
-        <input type="email" v-model="mine.email" class="form-control" placeholder="Enter email">
+        <input type="email" id="inputField" v-model="mine.email" class="form-control" placeholder="Enter email">
       </div>
       <br>
       <div>
         <label>Password:</label>
         <br>
-        <input type="password" v-model="mine.password" class="form-control" placeholder="Password">
+        <input type="password" id="inputField" v-model="mine.password" class="form-control" placeholder="Password">
       </div>
       <br>
       <center>
@@ -27,7 +27,7 @@
       <br>
       <br>
       <p>Forgot Password?</p>
-      <p>Don't have account yet? <a href="#">Sing Up</a></p>
+      <p>Don't have account yet? <a>Sign Up</a></p>
       </center>
     </form>
   </div>
@@ -50,6 +50,9 @@ h1,label,p {
 #btnLogin {
   background-color: $motif;
   width: 30%;
+}
+#inputField{
+  border-color: $motif;
 }
 </style>
 

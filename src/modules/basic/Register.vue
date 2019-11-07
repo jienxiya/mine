@@ -21,36 +21,7 @@
         <div v-if="submitted && !$v.mine.fname.required" class="invalid-feedback" >User Name is required</div>
       </div>
       <br />
-      <!-- Contact Number -->
-      <!-- <div>
-        <label>Contact Number:</label>
-        <br />
-        <input
-          type="text"
-          v-model="mine.cNum"
-          id="cNum"
-          name="Contact Number"
-          class="form-control"
-          :class="{ 'is-invalid': submitted && $v.mine.cNum.$error }" placeholder="fullname"
-        />
-        <div v-if="submitted && !$v.mine.cNum.required" class="invalid-feedback" >Contact Number is required</div>
-      </div>
-      <br />
-      <div> -->
-        <!-- Address -->
-        <!-- <label>Address:</label>
-        <br />
-        <input
-          type="text"
-          v-model="mine.address"
-          id="address"
-          name="address"
-          class="form-control"
-          :class="{ 'is-invalid': submitted && $v.mine.address.$error }" placeholder="Current Address"
-        />
-        <div v-if="submitted && !$v.mine.address.required" class="invalid-feedback" >Address is required</div>
-      </div>
-      <br /> -->
+     
 <!-- Email -->
       <div>
         <label>Email address:</label>
@@ -125,7 +96,9 @@
   padding: 10px;
   border-radius: 7px;  
 }
-
+#fname,#email,#password,#confirmPassword{
+  border-color: $motif;
+}
 #regForm{
   margin-left: 50%;
 }
