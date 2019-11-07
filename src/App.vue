@@ -1,4 +1,4 @@
-<template>
+<template id="body">
   <div id="app">
     <myheader/>
     <sidevar
@@ -36,3 +36,10 @@ export default {
   }
 };
 </script>
+
+<style>
+body{
+  background-image: url("assets/finalBckGnd.png");
+  background-size: cover;
+}
+</style>
